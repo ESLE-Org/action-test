@@ -1,3 +1,5 @@
+const core = require('@actions/core');
+const github = require('@actions/github');
 // @ts-check
 //  <ImportConfiguration>
 const CosmosClient = require("@azure/cosmos").CosmosClient;
