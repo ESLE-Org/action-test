@@ -9,7 +9,7 @@ const dbContext = require("./data/databaseContext");
 
 //  <DefineNewItem>
 const newItem = {
-  id: "17",
+  id: "6767",
   category: "efgh",
   name: "Cosmos DB",
   description: "Complete Cosmos DB Node.js Quickstart ⚡",
