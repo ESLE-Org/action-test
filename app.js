@@ -9,8 +9,8 @@ const dbContext = require("./data/databaseContext");
 
 //  <DefineNewItem>
 const newItem = {
-  id: "25",
-  category: "abcde",
+  id: "255",
+  category: "efgh",
   name: "Cosmos DB",
   description: "Complete Cosmos DB Node.js Quickstart ⚡",
   isComplete: false
