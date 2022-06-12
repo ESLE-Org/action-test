@@ -2,8 +2,8 @@
 require('dotenv').config();
 
 const config = {
-    endpoint: process.env.ENDPOINT,
-    key: process.env.KEY,
+    endpoint: os.enivron['ENDPOINT'],
+    key: os.environ['KEY'],
     databaseId: "Tasks",
     containerId: "Items",
     partitionKey: { kind: "Hash", paths: ["/category"] }
