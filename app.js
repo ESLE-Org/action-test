@@ -3,7 +3,7 @@ const github = require('@actions/github');
 // @ts-check
 //  <ImportConfiguration>
 const CosmosClient = require("@azure/cosmos").CosmosClient;
-const config = require("./config");
+const config = require("./config").default;
 const dbContext = require("./data/databaseContext");
 //  </ImportConfiguration>
 
