@@ -1,4 +1,7 @@
 name: Node.js CI
+env:
+  ENDPOINT: ${{secrets.ENDPOINT}}
+  KEY: ${{secrets.KEY}}
 
 on:
   push:
