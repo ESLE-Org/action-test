@@ -1,6 +1,6 @@
 // @ts-check
 require('dotenv').config();
-
+console.log('env', process.env)
 const config = {
     endpoint: process.env.ENDPOINT,
     key: process.env.KEY,
