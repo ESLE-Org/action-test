@@ -8,7 +8,7 @@ const dbContext = require("./data/databaseContext");
 
 const basicRepoDetailsData = require("./data/basicRepoDetailsData");
 const languagesData = require("./data/languagesData");
-const repositoriesData = require("./data/repositoriesData ");
+const repositoriesData = require("./data/repositoriesData");
 const tagsData = require("./data/tagsData");
 
 
