@@ -4,7 +4,7 @@ require('dotenv').config();
 // @ts-check
 //  <ImportConfiguration>
 const CosmosClient = require("@azure/cosmos").CosmosClient;
-const config = require("./config").default;
+const config = require("./config");
 const dbContext = require("./data/databaseContext");
 //  </ImportConfiguration>
 
