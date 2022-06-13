@@ -1,6 +1,6 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-require('dotenv').config();
+
 // @ts-check
 //  <ImportConfiguration>
 const CosmosClient = require("@azure/cosmos").CosmosClient;
@@ -19,13 +19,10 @@ const newItem = {
 //  </DefineNewItem>
 
 async function main() {
-  console.log("now");
-  console.log(config);
-  // <CreateClientObjectDatabaseContainer>
-  const { databaseId, containerId } = config;
-  const endpoint = process.env.ENDPOINT;
-  const key = process.env.KEY;
 
+  // <CreateClientObjectDatabaseContainer>
+  const { endpoint, key, databaseId, containerId } = config;
+  
   const client = new CosmosClient({ endpoint, key });
 
   const database = client.database(databaseId);
