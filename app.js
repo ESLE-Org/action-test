@@ -18,7 +18,7 @@ const newItem = {
 //  </DefineNewItem>
 
 async function main() {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
   // <CreateClientObjectDatabaseContainer>
   const { endpoint, key, databaseId, containerId } = config;
 
