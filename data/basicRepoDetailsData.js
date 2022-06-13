@@ -4,7 +4,7 @@ const basicRepoDetailsData = {
     monitorStatus: 0,
     orgId: "abcdeMDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=",
     repoName: "HealthVault-Mobile-iOS-Library",
-    repoWatchStatus: 0,
+    repoWatchStatus: 1,
     tag: "Not Specified currently",
     id: "abcdeMDEwOlJlcG9zaXRvcnkxOTMyMDgz"
 };
