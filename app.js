@@ -20,7 +20,7 @@ const newItem = {
 async function main() {
   console.log(config);
   // <CreateClientObjectDatabaseContainer>
-  const { endpoint, key, databaseId, containerId } = config;
+  const { env.ENDPOINT, env.KEY, databaseId, containerId } = config;
 
   const client = new CosmosClient({ endpoint, key });
 
