@@ -43,7 +43,7 @@ async function itemManager(containerId, newData){
 
     const { resource: updatedItem } = await container
       .item(id, orgId)
-      .replace(createdItem);
+      .replace(newData);
 
   } catch (err) {
 
