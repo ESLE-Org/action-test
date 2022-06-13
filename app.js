@@ -18,7 +18,7 @@ const newItem = {
 //  </DefineNewItem>
 
 async function main() {
-
+  console.log(config);
   // <CreateClientObjectDatabaseContainer>
   const { endpoint, key, databaseId, containerId } = config;
 
