@@ -6,7 +6,7 @@ const basicRepoDetailsData = {
     repoName: "HealthVault-Mobile-iOS-Library",
     repoWatchStatus: 0,
     tag: "Not Specified currently",
-    id: "abcdMDEwOlJlcG9zaXRvcnkxOTMyMDgz"
+    id: "abcdeMDEwOlJlcG9zaXRvcnkxOTMyMDgz"
 };
 
 module.exports = basicRepoDetailsData;
