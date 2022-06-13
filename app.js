@@ -56,7 +56,7 @@ async function repositoriesProcess(){
   itemManager("Repositories", repositoriesData);
 }
 
-async function repositoriesProcess(){
+async function tagsProcess(){
   itemManager("Tasks", tagsData);
 }
 
