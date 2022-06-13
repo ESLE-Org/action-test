@@ -21,9 +21,9 @@ async function main(){
 
 }
 
-async function itemManager(databaseId, newData){
+async function itemManager(containerId, newData){
   
-  const { endpoint, key, containerId} = config;
+  const { endpoint, key, databaseId} = config;
 
   const client = new CosmosClient({ endpoint, key });
 
