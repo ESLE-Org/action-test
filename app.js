@@ -36,15 +36,7 @@ async function itemManager(containerId, newData){
   try {      
 
     //create
-    //const { resource: createdItem } = await container.items.create(newData);
-
-    //update
-    //const { id, orgId } = createdItem;
-
-    const { resource: updatedItem } = await container
-      .item(id, orgId)
-      .replace(newData);
-
+    const { resource: createdItem } = await container.items.create(newData);
 
   } catch (err) {
 
