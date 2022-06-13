@@ -4,8 +4,7 @@ require('dotenv').config();
 const config = {
     endpoint: process.env.ENDPOINT,
     key: process.env.KEY,
-    databaseId: "Tasks",
-    containerId: "BasicRepoDetails",
+    databaseId: "MonitoringToolDBCopy",
     partitionKey: { kind: "Hash", paths: ["/orgId"] }
   };
   
