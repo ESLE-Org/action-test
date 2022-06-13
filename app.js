@@ -1,6 +1,5 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-
 // @ts-check
 //  <ImportConfiguration>
 const CosmosClient = require("@azure/cosmos").CosmosClient;
@@ -10,19 +9,21 @@ const dbContext = require("./data/databaseContext");
 
 //  <DefineNewItem>
 const newItem = {
-  id: "345",
-  category: "efgh",
-  name: "Cosmos DB",
-  description: "Complete Cosmos DB Node.js Quickstart ⚡",
-  isComplete: false
+  createdAt: "2011-06-21T22:49:39Z",
+  monitorStatus: 0,
+  orgId: "MDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=",
+  repoName: "HealthVault-Mobile-iOS-Library",
+  repoWatchStatus: 0,
+  tag: "Not Specified",
+  id: "MDEwOlJlcG9zaXRvcnkxOTMyMDgz"
 };
 //  </DefineNewItem>
 
 async function main() {
-
+  
   // <CreateClientObjectDatabaseContainer>
   const { endpoint, key, databaseId, containerId } = config;
-  
+
   const client = new CosmosClient({ endpoint, key });
 
   const database = client.database(databaseId);
