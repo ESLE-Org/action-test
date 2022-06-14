@@ -1,8 +1,8 @@
 
 const basicRepoDetailsData = {
     createdAt: "2011-06-21T22:49:39Z",
-    monitorStatus: 01,
-    orgId: "abcdeMDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=",
+    monitorStatus: 9,
+    orgId: "abdfdMDEyOk9yZ2FuaXphdGlvbjYxNTQ3MjI=",
     repoName: "HealthVault-Mobile-iOS-Library",
     repoWatchStatus: 1,
     tag: "Not Specified currently",

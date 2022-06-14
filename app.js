@@ -11,7 +11,7 @@ const languagesData = require("./data/languagesData");
 const repositoriesData = require("./data/repositoriesData");
 const tagsData = require("./data/tagsData");
 
-
+// main function
 async function main(){
 
   basicRepoDetailsProcess();
@@ -35,16 +35,29 @@ async function itemManager(containerId, newData){
 
   try {      
 
-    //create
-    const { resource: createdItem } = await container.items.create(newData);
+    // query to return all items
+    const querySpec = {
+      query: "SELECT * from c"
+    };
 
-    //update
-    const { id, orgId } = createdItem;
+    // read all items in the Items container
+    const { resources: allItems } = await container.items
+      .query(querySpec)
+      .fetchAll();
 
-    const { resource: updatedItem } = await container
-      .item(id, orgId)
-      .replace(newData);
+    // check whether item exists
+    const itemExists = allItems.some(item => ((item.id == newData.id) && (item.orgId == newData.orgId)));
 
+    // if item does not exist, create an item
+    if (!itemExists){
+      await container.items.create(newData)
+    }
+    // if item exists, update the item data
+    else{
+      await container.item(newData.id, newData.orgId).replace(newData);
+    }
+    
+    
   } catch (err) {
 
     console.log(err.message);
